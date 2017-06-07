@@ -1,0 +1,237 @@
+/* use the meetup red*/
+html {
+  box-sizing: border-box;
+  background: #fff;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 200;
+  border: 0; }
+
+a {
+  text-decoration: none;
+  color: #e51937; }
+
+p {
+  color: rgba(16, 23, 34, 0.7); }
+
+body {
+  margin: 0;
+  background-color: #fff;
+  overflow-x: hidden; }
+
+h2 {
+  color: #101722;
+  font-weight: 500;
+  opacity: .8;
+  font-size: 22.4px;
+  margin-top: 7em; }
+
+/** style the logo positioning */
+.logo-div {
+  position: absolute;
+  width: 10%;
+  min-width: 100px;
+  text-align: center;
+  margin: 2em auto 3em auto;
+  z-index: 5;
+  top: 2.5em;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#logo {
+  width: 100px; }
+
+/* styling the form section*/
+.form-section {
+  content: '';
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: url(formBackground.png) no-repeat center center;
+  background-size: contain;
+  will-change: transform;
+  position: relative;
+  text-align: center; }
+
+#input_container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  margin: 1.5em auto;
+  min-width: 300px;
+  max-width: 400px; }
+
+input {
+  border: 2px solid #dddddd;
+  width: 100%;
+  padding: .9em 0 .9em .5em;
+  border-radius: 4px;
+  position: relative; }
+
+#input_icon {
+  position: absolute;
+  top: 1.1em;
+  right: 1em;
+  width: 5%;
+  min-width: 25px;
+  max-width: 40px; }
+
+button {
+  width: 50%;
+  max-width: 170px;
+  border: none;
+  color: #fff;
+  margin: 1.2em auto;
+  padding: .9em 0;
+  text-align: center;
+  background-color: #e51937;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17.6px; }
+
+input[type=text],
+select:focus {
+  font-size: 17.6px;
+  color: rgba(16, 23, 34, 0.7); }
+
+/*.next-button {
+  display: none;
+}*/
+
+/** styling the results and cards*/
+#showing {
+  text-align: center; }
+
+#results-showing p {
+  font-size: 19.2px; }
+
+#results-showing span {
+  color: #e51937; }
+
+#results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end; }
+
+#results p {
+    padding-top: 1em;
+}
+
+.card {
+  position: relative;
+  width: 90%;
+  height: auto;
+  padding: 0 1.5em;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: left;
+  border: 2px solid rgba(221, 221, 221, 0.5);
+  border-radius: 5px;
+  margin: 4em auto; }
+
+.description {
+  height: 80px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background-color: rgba(215, 215, 215, 0.2);
+  border-radius: 2px;
+  padding: .5em 1em;
+  line-height: 1.5em;
+  font-size: 16px; }
+
+/** style the images on the page*/
+.image {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-top: 30px;
+  border: 1px solid rgba(221, 221, 221, 0.5); }
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; }
+
+/* styliing the main header*/
+.groupname {
+  color: #e51937;
+  font-size: 22.4px;
+  font-weight: 500;
+  padding: 1em 0; }
+
+/* styling the lower text fields*/
+.location, .who, .bold {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(16, 23, 34, 0.7);
+  padding: .8em 0; }
+
+.view-group {
+  width: 50%;
+  margin: 1.2em auto;
+  padding: 1.2em 0;
+  text-align: center;
+  background-color: #e51937;
+  border-radius: 5px; }
+
+.group-link {
+  width: 100%;
+  color: #fff; }
+
+/*style the scroll to top button*/
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#scroll-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+/*** ADDING MEDIA QUERIES ***/
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 400px;
+    margin: 4em 1.5em; } }
+@media only screen and (min-width: 1224px) {
+  #scroll-to-top:hover {
+    background: rgba(0, 0, 0, 0.9); }
+
+  #scroll-to-top:hover i {
+    color: #fff;
+    top: 5px; } }
+
+/*# sourceMappingURL=style.css.map */

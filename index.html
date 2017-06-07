@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Meetup Interview</title>
+  </head>
+  <body>
+    <div class="logo-div"><img id="logo" src="images/meetupLogo.png"></div>
+    <div class="form-section">
+
+      <h2>Find great meetup groups around you!</h2>
+      <form action="" id="find-meetup">
+        <div id="input_container">
+          <input type="text" id="text" name="query" placeholder="Enter interests e.g. Cooking" required>
+          <img src="images/search.png" id="input_icon">
+        </div>
+        <div id="input_container">
+          <input type="text" id="zip" name="zip" placeholder="Zipcode">
+          <img src="images/location.png" id="input_icon">
+        </div>
+        <br>
+        <button type="submit" id="search-meetup">Search</button>
+      </form>
+    </div>
+
+    <div id="showing"></div>
+    <div id="results"></div>
+
+    <div class="next-button">
+      <button type="submit" id="more-results">More results</button>
+    </div>
+
+    <a href="#" id="scroll-to-top"><i class="icon-chevron-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+  </body>
+</html>
